@@ -83,9 +83,9 @@ const commands = {
     socials: {
         description: 'Show social media links',
         execute: () => {
-            return `<span class="terminal-command">LinkedIn:</span> https://linkedin.com/in/thapasulav\n` +
-                   `<span class="terminal-command">GitHub:</span>   https://github.com/thapasulav\n` +
-                   `<span class="terminal-command">Twitter:</span>  https://twitter.com/thapasulav\n` +
+            return `<span class="terminal-command">LinkedIn:</span> https://www.linkedin.com/in/sulav-thapa-9a51b7376/\n` +
+                   `<span class="terminal-command">GitHub:</span>   https://www.instagram.com/sulavtpa/\n` +
+                   `<span class="terminal-command">Instagram:</span>  https://www.instagram.com/sulavtpa/\n` +
                    `<span class="terminal-command">Email:</span>    hello@thapasulav.info.np`;
         }
     }
