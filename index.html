@@ -1,16 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Sulav Thapa Ho Nii</title>
-    <meta name="description" content="Sulav Thapa: Young programmer passionate about C/C++, algorithms, and systems-level programming.">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/ncdf1Rpz/smile.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta
+      name="description"
+      content="Sulav Thapa: Young programmer passionate about C/C++, algorithms, and systems-level programming."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://i.postimg.cc/ncdf1Rpz/smile.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
@@ -18,227 +29,593 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
-<body class="relative font-inter">
+  </head>
+  <body class="relative font-inter">
     <div id="three-bg"></div>
     <header class="fixed w-full z-50 p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#hydrogen" class="text-3xl font-bold logo-text" aria-label="Go to Home section">Sulav Thapa</a>
-            <div class="flex items-center space-x-2 md:space-x-4">
-                <nav class="space-x-4 md:space-x-8 hidden md:flex" aria-label="Main navigation">
-                    <a href="#helium" class="nav-link font-spacemono">~/about</a>
-                    <a href="#lithium" class="nav-link font-spacemono">~/skills</a>
-                    <a href="#beryllium" class="nav-link font-spacemono">~/projects</a>
-                    <a href="#boron" class="nav-link font-spacemono">~/contact</a>
-                </nav>
-                <button id="header-music-button" class="header-icon-btn music-button" aria-label="Toggle Music">
-                    <svg class="icon play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
-                    <svg class="icon pause-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg>
-                    <div class="music-visualizer">
-                        <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
-                        <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
-                    </div>
-                </button>
-                <button id="header-terminal-button" class="header-icon-btn terminal-open-button" aria-label="Open Terminal">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
-                    </svg>
-                </button>
-                <button id="mobile-menu-button" class="md:hidden text-everforest-blue focus:outline-none p-2 rounded-md transition-colors duration-300 hover:bg-everforest-medium" aria-label="Open mobile menu">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
+      <div class="container mx-auto flex justify-between items-center">
+        <a
+          href="#hydrogen"
+          class="text-3xl font-bold logo-text"
+          aria-label="Go to Home section"
+          >Sulav Thapa</a
+        >
+        <div class="flex items-center space-x-2 md:space-x-4">
+          <nav
+            class="space-x-4 md:space-x-8 hidden md:flex"
+            aria-label="Main navigation"
+          >
+            <a href="#helium" class="nav-link font-spacemono">~/about</a>
+            <a href="#lithium" class="nav-link font-spacemono">~/skills</a>
+            <a href="#beryllium" class="nav-link font-spacemono">~/projects</a>
+            <a href="#boron" class="nav-link font-spacemono">~/contact</a>
+          </nav>
+          <button
+            id="header-music-button"
+            class="header-icon-btn music-button"
+            aria-label="Toggle Music"
+          >
+            <svg
+              class="icon play-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M8 5v14l11-7z"></path>
+            </svg>
+            <svg
+              class="icon pause-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>
+            </svg>
+            <div class="music-visualizer">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
             </div>
+          </button>
+          <button
+            id="header-terminal-button"
+            class="header-icon-btn terminal-open-button"
+            aria-label="Open Terminal"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 9l4-4 4 4m0 6l-4 4-4-4"
+              />
+            </svg>
+          </button>
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-everforest-blue focus:outline-none p-2 rounded-md transition-colors duration-300 hover:bg-everforest-medium"
+            aria-label="Open mobile menu"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
         </div>
+      </div>
     </header>
-    <div id="mobile-menu-overlay" class="fixed inset-0 bg-everforest-darkest bg-opacity-95 z-40 hidden flex-col items-center justify-center space-y-8 text-xl opacity-0 glass-effect" role="dialog" aria-modal="true" aria-label="Mobile Menu">
-        <a href="#helium" class="nav-link text-3xl">About</a>
-        <a href="#lithium" class="nav-link text-3xl">Skills</a>
-        <a href="#beryllium" class="nav-link text-3xl">Projects</a>
-        <a href="#boron" class="nav-link text-3xl">Contact</a>
-        <button id="close-mobile-menu" class="absolute top-6 right-6 text-everforest-green focus:outline-none p-2 rounded-md transition-colors duration-300 hover:bg-everforest-medium" aria-label="Close mobile menu">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-        </button>
+    <div
+      id="mobile-menu-overlay"
+      class="fixed inset-0 bg-everforest-darkest bg-opacity-95 z-40 hidden flex-col items-center justify-center space-y-8 text-xl opacity-0 glass-effect"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile Menu"
+    >
+      <a href="#helium" class="nav-link text-3xl">About</a>
+      <a href="#lithium" class="nav-link text-3xl">Skills</a>
+      <a href="#beryllium" class="nav-link text-3xl">Projects</a>
+      <a href="#boron" class="nav-link text-3xl">Contact</a>
+      <button
+        id="close-mobile-menu"
+        class="absolute top-6 right-6 text-everforest-green focus:outline-none p-2 rounded-md transition-colors duration-300 hover:bg-everforest-medium"
+        aria-label="Close mobile menu"
+      >
+        <svg
+          class="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+      </button>
     </div>
     <main>
-        <section id="hydrogen" class="min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden px-4 md:px-6 py-32">
-            <div class="relative z-10 p-6 md:p-12 max-w-5xl mx-auto flex flex-col items-center">
-                <div class="hero-text-container mb-4">
-                    <span class="hero-line text-xl md:text-2xl minty-green-text font-inter block">Namaste!, I'm</span>
-                </div>
-                <div class="hero-text-container mb-8">
-                    <h1 class="hero-line font-ubuntu text-8xl sm:text-9xl md:text-9xl lg:text-10xl font-bold gradient-text">
-                        Sulav Thapa
-                    </h1>
-                </div>
-                <div class="hero-text-container mb-16">
-                    <span id="animated-tagline" class="hero-line text-xl md:text-2xl minty-green-text font-inter block">A Book Enjoyer</span>
-                </div>
-                <div id="hero-button-container">
-                    <button id="hero-terminal-button" class="btn-primary idle-animation">Experience My Terminal</button>
-                </div>
+      <section
+        id="hydrogen"
+        class="min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden px-4 md:px-6 py-32"
+      >
+        <div
+          class="relative z-10 p-6 md:p-12 max-w-5xl mx-auto flex flex-col items-center"
+        >
+          <div class="hero-text-container mb-4">
+            <span
+              class="hero-line text-xl md:text-2xl minty-green-text font-inter block"
+              >Namaste!, I'm</span
+            >
+          </div>
+          <div class="hero-text-container mb-8">
+            <h1
+              class="hero-line font-ubuntu text-8xl sm:text-9xl md:text-9xl lg:text-10xl font-bold gradient-text"
+            >
+              Sulav Thapa
+            </h1>
+          </div>
+          <div class="hero-text-container mb-16">
+            <span
+              id="animated-tagline"
+              class="hero-line text-xl md:text-2xl minty-green-text font-inter block"
+              >A Book Enjoyer</span
+            >
+          </div>
+          <div id="hero-button-container">
+            <button id="hero-terminal-button" class="btn-primary">
+              Experience My Terminal
+            </button>
+          </div>
+        </div>
+        <div class="absolute bottom-16 left-1/2 transform -translate-x-1/2">
+          <a href="#helium" aria-label="Scroll to next section">
+            <svg
+              class="w-10 h-10 md:w-12 md:h-12 text-everforest-blue animate-scroll-arrow"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section
+        id="helium"
+        class="section-shell py-20 md:py-24 px-4 md:px-6 relative overflow-hidden glass-effect mx-4 md:mx-auto max-w-6xl my-12 rounded-2xl"
+      >
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+          <h2
+            class="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-everforest-text"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            About My Journey
+          </h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center"
+          >
+            <div
+              class="flex justify-center order-2 md:order-1"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <div class="pfp-container">
+                <img
+                  src="https://i.postimg.cc/wxmQqqKt/1d73059ddd164de7dd14f15c0bec6feb.png"
+                  alt="Sulav Thapa Profile Picture"
+                  class="pfp-image w-60 h-60 md:w-72 md:h-72 idle-animation"
+                />
+              </div>
             </div>
-            <div class="absolute bottom-16 left-1/2 transform -translate-x-1/2">
-                <a href="#helium" aria-label="Scroll to next section">
-                    <svg class="w-10 h-10 md:w-12 md:h-12 text-everforest-blue animate-scroll-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                    </svg>
-                </a>
+            <div
+              class="md:text-left order-1 md:order-2"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <p
+                class="text-base md:text-lg leading-relaxed text-everforest-light-text mb-4 md:mb-6 font-inter about-text"
+              >
+                I am Sulav Thapa, a young programmer in my early 20s, fascinated
+                by this mix of logic and creativity. The journey for me has
+                begun with an interest in numbers, logic, and electrical
+                systems, which made it only logical to proceed to programming. I
+                am eager about C/C++, Algorithms, and Systems-level programming,
+                immersing myself in the details of how things work under the
+                hood. I have considerable exposure to JavaScript, Java, and web
+                development, with an insatiable appetite to learn anything that
+                comes along.
+              </p>
+              <p
+                class="text-base md:text-lg leading-relaxed text-everforest-light-text font-inter about-text"
+              >
+                Beyond the code, you can find me playing chess, absorbed in a
+                good read, and chasing new ideas. For me, learning and coding
+                are not tasks but exciting discoveries. I am passionate about
+                coding with elegance and efficiency and learning the "why" for
+                every "how".
+              </p>
             </div>
-        </section>
-        <section id="helium" class="section-shell py-20 md:py-24 px-4 md:px-6 relative overflow-hidden glass-effect mx-4 md:mx-auto max-w-6xl my-12 rounded-2xl">
-            <div class="max-w-5xl mx-auto text-center relative z-10">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-everforest-text" data-aos="fade-down" data-aos-duration="1000">About My Journey</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-                    <div class="flex justify-center order-2 md:order-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-                        <div class="pfp-container">
-                            <img src="https://i.postimg.cc/wxmQqqKt/1d73059ddd164de7dd14f15c0bec6feb.png" alt="Sulav Thapa Profile Picture" class="pfp-image w-60 h-60 md:w-72 md:h-72 idle-animation">
-                        </div>
-                    </div>
-                    <div class="md:text-left order-1 md:order-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
-                        <p class="text-base md:text-lg leading-relaxed text-everforest-light-text mb-4 md:mb-6 font-inter about-text">
-                            I am Sulav Thapa, a young programmer in my early 20s, fascinated by this mix of logic and creativity. The journey for me has begun with an interest in numbers, logic, and electrical systems, which made it only logical to proceed to programming. I am eager about C/C++, Algorithms, and Systems-level programming, immersing myself in the details of how things work under the hood. I have considerable exposure to JavaScript, Java, and web development, with an insatiable appetite to learn anything that comes along.
-                        </p>
-                        <p class="text-base md:text-lg leading-relaxed text-everforest-light-text font-inter about-text">
-                            Beyond the code, you can find me playing chess, absorbed in a good read, and chasing new ideas. For me, learning and coding are not tasks but exciting discoveries. I am passionate about coding with elegance and efficiency and learning the "why" for every "how".
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="lithium" class="section-shell py-20 md:py-24 px-4 md:px-6 relative overflow-hidden mx-4 md:mx-auto max-w-6xl my-12 rounded-2xl">
-            <div class="max-w-6xl mx-auto text-center relative z-10">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-everforest-text" data-aos="fade-down" data-aos-duration="1000">
-                    Hobbies & Toolkits
-                </h2>
-                <div class="mb-12">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-everforest-text mb-6 font-inter" data-aos="fade-up" data-aos-duration="800">
-                        Hobbies
-                    </h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
-                        <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="50">
-                            <span class="text-4xl md:text-5xl mb-2 md:mb-3">📚</span>
-                            <h4 class="text-lg md:text-xl font-semibold text-everforest-orange font-inter">Book Guy</h4>
-                            <p class="text-xs md:text-sm text-everforest-light-text font-spacemono">
-                                Loves getting lost in ideas, stories, and random PDFs.
-                            </p>
-                        </div>
-                        <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="150">
-                            <span class="text-4xl md:text-5xl mb-2 md:mb-3">🐧</span>
-                            <h4 class="text-lg md:text-xl font-semibold text-everforest-orange font-inter">Linux User (Arch btw)</h4>
-                            <p class="text-xs md:text-sm text-everforest-light-text font-spacemono">
-                                Tweaking configs, breaking things, fixing them… eventually.
-                            </p>
-                        </div>
-                        <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="250">
-                            <span class="text-4xl md:text-5xl mb-2 md:mb-3">💚</span>
-                            <h4 class="text-lg md:text-xl font-semibold text-everforest-orange font-inter">Open Source Lover</h4>
-                            <p class="text-xs md:text-sm text-everforest-light-text font-spacemono">
-                                Uses, learns from, and dreams of contributing to cool OSS.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-2xl md:text-3xl font-semibold text-everforest-text mb-6 font-inter" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                        Toolkits
-                    </h3>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-                        <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="50">
-                            <span class="text-4xl md:text-5xl mb-2 md:mb-3">⚙️</span>
-                            <h4 class="text-lg md:text-xl font-semibold text-everforest-orange font-inter">C</h4>
-                            <p class="text-xs md:text-sm text-everforest-light-text font-spacemono">
-                                Low-level control and pointer adventures.
-                            </p>
-                        </div>
-                        <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="100">
-                            <span class="text-4xl md:text-5xl mb-2 md:mb-3">🚀</span>
-                            <h4 class="text-lg md:text-xl font-semibold text-everforest-orange font-inter">C++</h4>
-                            <p class="text-xs md:text-sm text-everforest-light-text font-spacemono">
-                                OOP, STL, and occasional template headaches.
-                            </p>
-                        </div>
-                        <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="150">
-                            <span class="text-4xl md:text-5xl mb-2 md:mb-3">☕</span>
-                            <h4 class="text-lg md:text-xl font-semibold text-everforest-orange font-inter">Java</h4>
-                            <p class="text-xs md:text-sm text-everforest-light-text font-spacemono">
-                                Object-oriented errors, but in a comfy VM.
-                            </p>
-                        </div>
-                        <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="200">
-                            <span class="text-4xl md:text-5xl mb-2 md:mb-3">🌐</span>
-                            <h4 class="text-lg md:text-xl font-semibold text-everforest-orange font-inter">Vue.js</h4>
-                            <p class="text-xs md:text-sm text-everforest-light-text font-spacemono">
-                                Reactive UIs with a chill learning curve.
-                            </p>
-                        </div>
-                        <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="250">
-                            <span class="text-4xl md:text-5xl mb-2 md:mb-3">🧱</span>
-                            <h4 class="text-lg md:text-xl font-semibold text-everforest-orange font-inter">SolidJS</h4>
-                            <p class="text-xs md:text-sm text-everforest-light-text font-spacemono">
-                                Fine-grained reactivity and snappy frontends.
-                            </p>
-                        </div>
-                        <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="300">
-                            <span class="text-4xl md:text-5xl mb-2 md:mb-3">🧵</span>
-                            <h4 class="text-lg md:text-xl font-semibold text-everforest-orange font-inter">Node.js</h4>
-                            <p class="text-xs md:text-sm text-everforest-light-text font-spacemono">
-                                APIs, bots, and backends in JavaScript land.
-                            </p>
-                        </div>
-                        <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="350">
-                            <span class="text-4xl md:text-5xl mb-2 md:mb-3">🔧</span>
-                            <h4 class="text-lg md:text-xl font-semibold text-everforest-orange font-inter">Web Basics</h4>
-                            <p class="text-xs md:text-sm text-everforest-light-text font-spacemono">
-                                HTML, CSS, vanilla JS – the usual suspects.
-                            </p>
-                        </div>
-                        <div class="skill-card" data-aos="zoom-in-up" data-aos-duration="600" data-aos-delay="400">
-                            <span class="text-4xl md:text-5xl mb-2 md:mb-3">🧠</span>
-                            <h4 class="text-lg md:text-xl font-semibold text-everforest-orange font-inter">More Soon</h4>
-                            <p class="text-xs md:text-sm text-everforest-light-text font-spacemono">
-                                Always adding new tools as the journey continues.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="beryllium" class="section-shell py-20 md:py-24 px-4 md:px-6 relative overflow-hidden mx-4 md:mx-auto max-w-6xl my-12 rounded-2xl">
-             <div class="max-w-6xl mx-auto text-center relative z-10">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-everforest-text" data-aos="fade-down" data-aos-duration="1000">My Projects</h2>
-                <div class="mt-8 p-6 md:p-10 bg-everforest-darker glass-effect rounded-xl shadow-lg border border-everforest-blue" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
-                    <p class="text-xl md:text-3xl text-everforest-text mb-4 font-spacemono">
-                        Ill do it soon.. Source: Trust me Bro! The ones I have done aren't as perfect as I want them to be.
-                    </p>
-                    <p class="text-base md:text-lg text-everforest-light-text font-spacemono">
-                        Or they are barely usable by any other human being :(
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section id="boron" class="section-shell py-20 md:py-24 px-4 md:px-6 relative overflow-hidden mx-4 md:mx-auto max-w-6xl my-12 rounded-2xl">
-            <div class="max-w-4xl mx-auto text-center relative z-10">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-everforest-text" data-aos="fade-down" data-aos-duration="1000">Let's Connect!</h2>
-                <p class="text-base md:text-xl text-everforest-light-text mb-6 md:mb-8 leading-relaxed font-spacemono" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    Whether it's for a collaboration, a coding challenge, or just a friendly chat about digital logic or life, I'm all bored!
+          </div>
+        </div>
+      </section>
+      <section
+        id="lithium"
+        class="section-shell py-20 md:py-24 px-4 md:px-6 relative overflow-hidden mx-4 md:mx-auto max-w-6xl my-12 rounded-2xl"
+      >
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+          <h2
+            class="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-everforest-text"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            Hobbies & Toolkits
+          </h2>
+          <div class="mb-12">
+            <h3
+              class="text-2xl md:text-3xl font-semibold text-everforest-text mb-6 font-inter"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              Hobbies
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
+              <div
+                class="skill-card"
+                data-aos="zoom-in-up"
+                data-aos-duration="600"
+                data-aos-delay="50"
+              >
+                <span class="text-4xl md:text-5xl mb-2 md:mb-3">📚</span>
+                <h4
+                  class="text-lg md:text-xl font-semibold text-everforest-orange font-inter"
+                >
+                  Book Guy
+                </h4>
+                <p
+                  class="text-xs md:text-sm text-everforest-light-text font-spacemono"
+                >
+                  Loves getting lost in ideas, stories, and random PDFs.
                 </p>
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <a href="mailto:notquiteready@soon.com" class="text-everforest-blue hover:text-everforest-green text-xl md:text-2xl font-semibold hover:underline transition-colors duration-300 block mb-6 font-inter">
-                        notquiteready@soon.com
-                    </a>
-                </div>
+              </div>
+              <div
+                class="skill-card"
+                data-aos="zoom-in-up"
+                data-aos-duration="600"
+                data-aos-delay="150"
+              >
+                <span class="text-4xl md:text-5xl mb-2 md:mb-3">🐧</span>
+                <h4
+                  class="text-lg md:text-xl font-semibold text-everforest-orange font-inter"
+                >
+                  Linux User (Arch btw)
+                </h4>
+                <p
+                  class="text-xs md:text-sm text-everforest-light-text font-spacemono"
+                >
+                  Tweaking configs, breaking things, fixing them… eventually.
+                </p>
+              </div>
+              <div
+                class="skill-card"
+                data-aos="zoom-in-up"
+                data-aos-duration="600"
+                data-aos-delay="250"
+              >
+                <span class="text-4xl md:text-5xl mb-2 md:mb-3">💚</span>
+                <h4
+                  class="text-lg md:text-xl font-semibold text-everforest-orange font-inter"
+                >
+                  Open Source Lover
+                </h4>
+                <p
+                  class="text-xs md:text-sm text-everforest-light-text font-spacemono"
+                >
+                  Uses, learns from, and dreams of contributing to cool OSS.
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div>
+            <h3
+              class="text-2xl md:text-3xl font-semibold text-everforest-text mb-6 font-inter"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="100"
+            >
+              Toolkits
+            </h3>
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8"
+            >
+              <div
+                class="skill-card"
+                data-aos="zoom-in-up"
+                data-aos-duration="600"
+                data-aos-delay="50"
+              >
+                <span class="text-4xl md:text-5xl mb-2 md:mb-3">⚙️</span>
+                <h4
+                  class="text-lg md:text-xl font-semibold text-everforest-orange font-inter"
+                >
+                  C
+                </h4>
+                <p
+                  class="text-xs md:text-sm text-everforest-light-text font-spacemono"
+                >
+                  Low-level control and pointer adventures.
+                </p>
+              </div>
+              <div
+                class="skill-card"
+                data-aos="zoom-in-up"
+                data-aos-duration="600"
+                data-aos-delay="100"
+              >
+                <span class="text-4xl md:text-5xl mb-2 md:mb-3">🚀</span>
+                <h4
+                  class="text-lg md:text-xl font-semibold text-everforest-orange font-inter"
+                >
+                  C++
+                </h4>
+                <p
+                  class="text-xs md:text-sm text-everforest-light-text font-spacemono"
+                >
+                  OOP, STL, and occasional template headaches.
+                </p>
+              </div>
+              <div
+                class="skill-card"
+                data-aos="zoom-in-up"
+                data-aos-duration="600"
+                data-aos-delay="150"
+              >
+                <span class="text-4xl md:text-5xl mb-2 md:mb-3">☕</span>
+                <h4
+                  class="text-lg md:text-xl font-semibold text-everforest-orange font-inter"
+                >
+                  Java
+                </h4>
+                <p
+                  class="text-xs md:text-sm text-everforest-light-text font-spacemono"
+                >
+                  Object-oriented errors, but in a comfy VM.
+                </p>
+              </div>
+              <div
+                class="skill-card"
+                data-aos="zoom-in-up"
+                data-aos-duration="600"
+                data-aos-delay="200"
+              >
+                <span class="text-4xl md:text-5xl mb-2 md:mb-3">🌐</span>
+                <h4
+                  class="text-lg md:text-xl font-semibold text-everforest-orange font-inter"
+                >
+                  Vue.js
+                </h4>
+                <p
+                  class="text-xs md:text-sm text-everforest-light-text font-spacemono"
+                >
+                  Reactive UIs with a chill learning curve.
+                </p>
+              </div>
+              <div
+                class="skill-card"
+                data-aos="zoom-in-up"
+                data-aos-duration="600"
+                data-aos-delay="250"
+              >
+                <span class="text-4xl md:text-5xl mb-2 md:mb-3">🧱</span>
+                <h4
+                  class="text-lg md:text-xl font-semibold text-everforest-orange font-inter"
+                >
+                  SolidJS
+                </h4>
+                <p
+                  class="text-xs md:text-sm text-everforest-light-text font-spacemono"
+                >
+                  Fine-grained reactivity and snappy frontends.
+                </p>
+              </div>
+              <div
+                class="skill-card"
+                data-aos="zoom-in-up"
+                data-aos-duration="600"
+                data-aos-delay="300"
+              >
+                <span class="text-4xl md:text-5xl mb-2 md:mb-3">🧵</span>
+                <h4
+                  class="text-lg md:text-xl font-semibold text-everforest-orange font-inter"
+                >
+                  Node.js
+                </h4>
+                <p
+                  class="text-xs md:text-sm text-everforest-light-text font-spacemono"
+                >
+                  APIs, bots, and backends in JavaScript land.
+                </p>
+              </div>
+              <div
+                class="skill-card"
+                data-aos="zoom-in-up"
+                data-aos-duration="600"
+                data-aos-delay="350"
+              >
+                <span class="text-4xl md:text-5xl mb-2 md:mb-3">🔧</span>
+                <h4
+                  class="text-lg md:text-xl font-semibold text-everforest-orange font-inter"
+                >
+                  Web Basics
+                </h4>
+                <p
+                  class="text-xs md:text-sm text-everforest-light-text font-spacemono"
+                >
+                  HTML, CSS, vanilla JS – the usual suspects.
+                </p>
+              </div>
+              <div
+                class="skill-card"
+                data-aos="zoom-in-up"
+                data-aos-duration="600"
+                data-aos-delay="400"
+              >
+                <span class="text-4xl md:text-5xl mb-2 md:mb-3">🧠</span>
+                <h4
+                  class="text-lg md:text-xl font-semibold text-everforest-orange font-inter"
+                >
+                  More Soon
+                </h4>
+                <p
+                  class="text-xs md:text-sm text-everforest-light-text font-spacemono"
+                >
+                  Always adding new tools as the journey continues.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="beryllium"
+        class="section-shell py-20 md:py-24 px-4 md:px-6 relative overflow-hidden mx-4 md:mx-auto max-w-6xl my-12 rounded-2xl"
+      >
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+          <h2
+            class="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-everforest-text"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            My Projects
+          </h2>
+          <div
+            class="mt-8 p-6 md:p-10 bg-everforest-darker glass-effect rounded-xl shadow-lg border border-everforest-blue"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <p
+              class="text-xl md:text-3xl text-everforest-text mb-4 font-spacemono"
+            >
+              Ill do it soon.. Source: Trust me Bro! The ones I have done aren't
+              as perfect as I want them to be.
+            </p>
+            <p
+              class="text-base md:text-lg text-everforest-light-text font-spacemono"
+            >
+              Or they are barely usable by any other human being :(
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="boron"
+        class="section-shell py-20 md:py-24 px-4 md:px-6 relative overflow-hidden mx-4 md:mx-auto max-w-6xl my-12 rounded-2xl"
+      >
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+          <h2
+            class="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-everforest-text"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            Let's Connect!
+          </h2>
+          <p
+            class="text-base md:text-xl text-everforest-light-text mb-6 md:mb-8 leading-relaxed font-spacemono"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            Whether it's for a collaboration, a coding challenge, or just a
+            friendly chat about digital logic or life, I'm all bored!
+          </p>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <a
+              href="mailto:notquiteready@soon.com"
+              class="text-everforest-blue hover:text-everforest-green text-xl md:text-2xl font-semibold hover:underline transition-colors duration-300 block mb-6 font-inter"
+            >
+              notquiteready@soon.com
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="text-center py-6 md:py-8 border-t border-everforest-medium">
-        <p class="text-sm text-everforest-light-text font-inter" data-aos="fade-up" data-aos-duration="600">Coded with curiosity and dedication. &copy; <span id="current-year"></span> Sulav Thapa. All rights reserved.</p>
-        <div class="flex justify-center space-x-6 mt-4 font-spacemono text-everforest-text text-lg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-            <a href="https://www.linkedin.com/in/sulav-thapa-9a51b7376/" target="_blank" rel="noopener noreferrer" class="nav-link">LinkedIn</a>
-            <a href="https://www.instagram.com/sulavtpa/" target="_blank" rel="noopener noreferrer" class="nav-link">Instagram</a>
-            <a href="https://discord.com/users/1390350188907991154" target="_blank" rel="noopener noreferrer" class="nav-link">Discord</a>
-        </div>
+      <p
+        class="text-sm text-everforest-light-text font-inter"
+        data-aos="fade-up"
+        data-aos-duration="600"
+      >
+        Coded with curiosity and dedication. &copy;
+        <span id="current-year"></span> Sulav Thapa. All rights reserved.
+      </p>
+      <div
+        class="flex justify-center space-x-6 mt-4 font-spacemono text-everforest-text text-lg"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="200"
+      >
+        <a
+          href="https://www.linkedin.com/in/sulav-thapa-9a51b7376/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-link"
+          >LinkedIn</a
+        >
+        <a
+          href="https://www.instagram.com/sulavtpa/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-link"
+          >Instagram</a
+        >
+        <a
+          href="https://discord.com/users/1390350188907991154"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-link"
+          >Discord</a
+        >
+      </div>
     </footer>
     <script src="commands.js"></script>
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
